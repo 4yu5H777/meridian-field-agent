@@ -1,0 +1,36 @@
+{
+  "name": "pg-spike",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "db:local:up": "docker run -d --name pg-spike-local -e POSTGRES_PASSWORD=localonly -p 127.0.0.1:5432:5432 postgres:16",
+    "db:local:down": "docker rm -f pg-spike-local",
+    "test:local": "node test-local.js",
+    "test:unit": "node --test tests/confirmation.test.ts tests/summary.test.ts tests/intake.test.ts tests/credit.test.ts tests/submit.test.ts tests/callback.test.ts tests/evening.test.ts tests/reports.test.ts tests/identity-gate.test.ts tests/media.test.ts tests/lang.test.ts tests/reportText.test.ts tests/registration.test.ts tests/whatsappDelivery.test.ts mock-distributor/distributor.test.mjs",
+    "test:integration": "node --env-file=.env.owner --env-file=.env --test tests/intake.integration.test.ts",
+    "db:roles": "node --env-file=.env.owner scripts/db.mjs db/roles.sql",
+    "db:logins": "node --env-file=.env.owner scripts/set-db-logins.mjs",
+    "db:reset": "node --env-file=.env.owner scripts/db.mjs db/roles.sql db/schema.sql db/seed.sql db/privileges.sql",
+    "db:check": "node --env-file=.env.owner scripts/db.mjs db/checks.sql",
+    "db:check:confirmation": "node --env-file=.env.owner scripts/db.mjs db/checks-confirmation.sql",
+    "db:check:intake": "node --env-file=.env.owner scripts/db.mjs db/checks-intake.sql",
+    "db:check:roles": "node --env-file=.env scripts/db.mjs --as agent db/checks-agent.sql && node --env-file=.env scripts/db.mjs --as system db/checks-system.sql && node --env-file=.env.owner scripts/db.mjs --as readonly db/checks-readonly.sql",
+    "db:check:credit": "node --env-file=.env.owner scripts/db.mjs db/checks-credit.sql",
+    "db:check:all": "npm run -s db:check && npm run -s db:check:roles && npm run -s db:check:confirmation && npm run -s db:check:intake && npm run -s db:check:credit && npm run -s db:check:submission && npm run -s db:check:callbacks && npm run -s db:check:summary && npm run -s db:check:reports && npm run -s db:check:identity && npm run -s db:check:aliases",
+    "db:check:submission": "node --env-file=.env.owner scripts/db.mjs db/checks-submission.sql",
+    "db:check:callbacks": "node --env-file=.env.owner scripts/db.mjs db/checks-callbacks.sql",
+    "db:check:summary": "node --env-file=.env.owner scripts/db.mjs db/checks-summary.sql",
+    "db:check:reports": "node --env-file=.env.owner scripts/db.mjs db/checks-reports.sql",
+    "db:check:identity": "node --env-file=.env.owner scripts/db.mjs db/checks-identity.sql",
+    "db:check:aliases": "node --env-file=.env.owner scripts/db.mjs db/checks-aliases.sql",
+    "register": "node --env-file=.env scripts/register.mjs"
+  },
+  "dependencies": {
+    "@neondatabase/serverless": "^1.1.0",
+    "fflate": "^0.8.3",
+    "lua-cli": "^3.39.4",
+    "pg": "^8.23.0",
+    "zod": "^3.25.76"
+  }
+}

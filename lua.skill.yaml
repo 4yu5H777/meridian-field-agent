@@ -1,0 +1,51 @@
+agent:
+  agentId: baseAgent_0e951a65-33e3-45a8-a93c-61eb8c2641f3
+  orgId: 82f2188f-a444-4414-9a5d-73dc5204d734
+skills:
+  - name: order-intake
+    skillId: 2711621d-9e54-420b-af2b-5cd9028343fa
+    version: 1.0.2
+  - name: team-reports
+    skillId: c866d5d2-09d0-4778-a557-93164ed1560c
+    version: 1.0.2
+webhooks:
+  - name: distributor-callback
+    version: 1.0.2
+    webhookId: 633aa39b-c543-45c6-919c-288dcbc95473
+  - name: reviewer-registration
+    version: 1.0.2
+    webhookId: 02d979fa-0ff4-447b-b2cc-b255d89421a0
+jobs:
+  - jobId: 0e32ff68-a18f-4437-a495-708731450d3e
+    name: notification-dispatcher
+    version: 1.0.2
+  - jobId: 2fa00bc4-87b0-4b2d-8831-cf9e10b1ff43
+    name: distributor-submitter
+    version: 1.0.2
+  - jobId: 4aa276bc-6816-45f1-8f5e-810ec139dc1d
+    name: evening-summary
+    version: 1.0.2
+preprocessors:
+  - name: confirmation-gate
+    preprocessorId: preprocessor_a694c9fb-32d6-4143-997d-6adfe27715e7
+    version: 1.0.2
+  - name: credit-reply-gate
+    preprocessorId: preprocessor_d9b6d09c-ac88-40e5-8a22-fb5df0885e8c
+    version: 1.0.2
+  - name: identity-gate
+    preprocessorId: preprocessor_9e43a38f-47ab-4438-b8df-ff08d7cd6075
+    version: 1.0.1
+  - name: media-normalizer
+    preprocessorId: preprocessor_2196cfd4-ce2d-44ae-b62f-b3cffa2a0a7c
+    version: 1.0.2
+postprocessors:
+  - name: summary-integrity
+    postprocessorId: postprocessor_1acee1dc-e2e7-495b-bb37-baf1860fec11
+    version: 1.0.2
+  - name: report-integrity
+    postprocessorId: postprocessor_8532fb3d-736e-4e62-8930-5862e24fc403
+    version: 1.0.2
+backup:
+  activeVersion: 3
+  lastHash: 16be37f15a518d1955d1285bc65b8f882196e34ed6457deb92e814e85fa93ffd
+  lastPushedAt: '2026-09-29T19:01:15.666Z'

@@ -1,0 +1,346 @@
+{
+  "lastHash": "16be37f15a518d1955d1285bc65b8f882196e34ed6457deb92e814e85fa93ffd",
+  "lastPushedAt": "2026-09-29T19:01:15.667Z",
+  "files": [
+    {
+      "relativePath": "db/checks-agent.sql",
+      "hash": "569eb368cf4d4eb6"
+    },
+    {
+      "relativePath": "db/checks-aliases.sql",
+      "hash": "a6582e6e8f3133e4"
+    },
+    {
+      "relativePath": "db/checks-callbacks.sql",
+      "hash": "85a1a14dbdc77494"
+    },
+    {
+      "relativePath": "db/checks-confirmation.sql",
+      "hash": "0d6854374c822de1"
+    },
+    {
+      "relativePath": "db/checks-credit.sql",
+      "hash": "06b2fcfcffc55dc3"
+    },
+    {
+      "relativePath": "db/checks-identity.sql",
+      "hash": "adf1237d8c715d00"
+    },
+    {
+      "relativePath": "db/checks-intake.sql",
+      "hash": "56c125306c69c76d"
+    },
+    {
+      "relativePath": "db/checks-readonly.sql",
+      "hash": "51acfc3c90e6223f"
+    },
+    {
+      "relativePath": "db/checks-reports.sql",
+      "hash": "0238a7be3b0df757"
+    },
+    {
+      "relativePath": "db/checks-submission.sql",
+      "hash": "7a032708846ec8ce"
+    },
+    {
+      "relativePath": "db/checks-summary.sql",
+      "hash": "2407ca53db703e79"
+    },
+    {
+      "relativePath": "db/checks-system.sql",
+      "hash": "0defe3c2346f780e"
+    },
+    {
+      "relativePath": "db/checks.sql",
+      "hash": "cdb5bd0cd13cf017"
+    },
+    {
+      "relativePath": "db/privileges.sql",
+      "hash": "f8014692320f20ab"
+    },
+    {
+      "relativePath": "db/roles.sql",
+      "hash": "37622bf380d6585a"
+    },
+    {
+      "relativePath": "db/scale-check.sql",
+      "hash": "48593fe21383470d"
+    },
+    {
+      "relativePath": "db/schema.sql",
+      "hash": "b5be8db58bde4e7c"
+    },
+    {
+      "relativePath": "db/seed.sql",
+      "hash": "42527f6dad522a4a"
+    },
+    {
+      "relativePath": "docs/CHECKLIST.md",
+      "hash": "d5af651843a8cc09"
+    },
+    {
+      "relativePath": "lua.skill.yaml",
+      "hash": "0e1db33cedb914ee"
+    },
+    {
+      "relativePath": "mock-distributor/distributor.mjs",
+      "hash": "91396222f15bad66"
+    },
+    {
+      "relativePath": "mock-distributor/server.mjs",
+      "hash": "24d8d9bf72481394"
+    },
+    {
+      "relativePath": "mock-distributor/trigger.mjs",
+      "hash": "cedfed848ab295d4"
+    },
+    {
+      "relativePath": "package.json",
+      "hash": "92fea5fa1a47310c"
+    },
+    {
+      "relativePath": "README.md",
+      "hash": "8ed0939520bf1bc1"
+    },
+    {
+      "relativePath": "samples/hindi-order.xlsx",
+      "hash": "69f01c6250fef8ff"
+    },
+    {
+      "relativePath": "samples/hindi-orderbook.jpg",
+      "hash": "168bda3996b307b5"
+    },
+    {
+      "relativePath": "samples/injection.jpg",
+      "hash": "17010c5f94962450"
+    },
+    {
+      "relativePath": "samples/mixed-orderbook.jpg",
+      "hash": "eb7224efefea2080"
+    },
+    {
+      "relativePath": "samples/needs-clarification.csv",
+      "hash": "fbf0723b470181be"
+    },
+    {
+      "relativePath": "samples/noise.wav",
+      "hash": "b1a8a49efb53465c"
+    },
+    {
+      "relativePath": "samples/order.csv",
+      "hash": "970a9fef88ad7f9a"
+    },
+    {
+      "relativePath": "samples/order.pdf",
+      "hash": "8c5b330c035391d3"
+    },
+    {
+      "relativePath": "samples/orderbook.jpg",
+      "hash": "bc5aff456044ae31"
+    },
+    {
+      "relativePath": "samples/purchase-order-60-lines.xlsx",
+      "hash": "42a6fea595771bb2"
+    },
+    {
+      "relativePath": "samples/README.md",
+      "hash": "eac7b2980847bfa5"
+    },
+    {
+      "relativePath": "scripts/db.mjs",
+      "hash": "f96591474a81e7cd"
+    },
+    {
+      "relativePath": "scripts/make-sample-sheets.ts",
+      "hash": "1317c3504adb98a1"
+    },
+    {
+      "relativePath": "scripts/media-smoke.ts",
+      "hash": "c1f12339d4ae5e65"
+    },
+    {
+      "relativePath": "scripts/register.mjs",
+      "hash": "b87ffa7b57d07666"
+    },
+    {
+      "relativePath": "scripts/set-db-logins.mjs",
+      "hash": "e0624dc9dfc51290"
+    },
+    {
+      "relativePath": "src/index.ts",
+      "hash": "244b44ee808b47bb"
+    },
+    {
+      "relativePath": "src/jobs/DistributorSubmitter.ts",
+      "hash": "0698cc0255390820"
+    },
+    {
+      "relativePath": "src/jobs/EveningSummary.ts",
+      "hash": "2eef4af22637448e"
+    },
+    {
+      "relativePath": "src/jobs/NotificationDispatcher.ts",
+      "hash": "1017d16c05a9e387"
+    },
+    {
+      "relativePath": "src/lib/callback.ts",
+      "hash": "0953bd8623b6b85b"
+    },
+    {
+      "relativePath": "src/lib/channelSend.ts",
+      "hash": "6ad7f75c28fa9cff"
+    },
+    {
+      "relativePath": "src/lib/confirmation.ts",
+      "hash": "87dc3f7223f81d76"
+    },
+    {
+      "relativePath": "src/lib/creditReply.ts",
+      "hash": "c9a1203b1d1d7b30"
+    },
+    {
+      "relativePath": "src/lib/dispatch.ts",
+      "hash": "5b062ae26105c766"
+    },
+    {
+      "relativePath": "src/lib/distributorClient.ts",
+      "hash": "188bd819f05c156b"
+    },
+    {
+      "relativePath": "src/lib/eveningSummary.ts",
+      "hash": "f423bc2ebdaa4224"
+    },
+    {
+      "relativePath": "src/lib/identity.ts",
+      "hash": "5b54bda093c72869"
+    },
+    {
+      "relativePath": "src/lib/identityGate.ts",
+      "hash": "c4b6d031127ebac2"
+    },
+    {
+      "relativePath": "src/lib/intake.ts",
+      "hash": "de29e0b220b70028"
+    },
+    {
+      "relativePath": "src/lib/lang.ts",
+      "hash": "9ff4c3a2b1c9fd83"
+    },
+    {
+      "relativePath": "src/lib/luaRequest.ts",
+      "hash": "742b10a0a661043b"
+    },
+    {
+      "relativePath": "src/lib/media/canonical.ts",
+      "hash": "bbfa753b22a497d8"
+    },
+    {
+      "relativePath": "src/lib/media/load.ts",
+      "hash": "8a000bcd77be820b"
+    },
+    {
+      "relativePath": "src/lib/media/normalize.ts",
+      "hash": "418fd7a7eb5a5af5"
+    },
+    {
+      "relativePath": "src/lib/media/reader.ts",
+      "hash": "c8ea03b96c27b903"
+    },
+    {
+      "relativePath": "src/lib/media/spreadsheet.ts",
+      "hash": "7cc099bbf53660fe"
+    },
+    {
+      "relativePath": "src/lib/meridianDb.ts",
+      "hash": "7a37221b425b68ba"
+    },
+    {
+      "relativePath": "src/lib/notify.ts",
+      "hash": "3ef11fd29ccc9db4"
+    },
+    {
+      "relativePath": "src/lib/registration.ts",
+      "hash": "8f355453fc29262b"
+    },
+    {
+      "relativePath": "src/lib/reports.ts",
+      "hash": "b7cf21c6e9b2078f"
+    },
+    {
+      "relativePath": "src/lib/reportText.ts",
+      "hash": "2b883b8769f8f20d"
+    },
+    {
+      "relativePath": "src/lib/submit.ts",
+      "hash": "5f3236109c97eb27"
+    },
+    {
+      "relativePath": "src/lib/summary.ts",
+      "hash": "488dc143ccc2bef9"
+    },
+    {
+      "relativePath": "src/lib/whatsappDelivery.ts",
+      "hash": "aa19b2672e0e20dc"
+    },
+    {
+      "relativePath": "src/postprocessors/ReportIntegrity.ts",
+      "hash": "a0d682159033eccf"
+    },
+    {
+      "relativePath": "src/postprocessors/SummaryIntegrity.ts",
+      "hash": "5a06b09a5b8825ba"
+    },
+    {
+      "relativePath": "src/preprocessors/ConfirmationGate.ts",
+      "hash": "46144287a2f64c93"
+    },
+    {
+      "relativePath": "src/preprocessors/CreditReplyGate.ts",
+      "hash": "cfe7aa78b3d90631"
+    },
+    {
+      "relativePath": "src/preprocessors/IdentityGate.ts",
+      "hash": "3605dc75a14d9867"
+    },
+    {
+      "relativePath": "src/preprocessors/MediaNormalizer.ts",
+      "hash": "0a9dda0ce4e7d5af"
+    },
+    {
+      "relativePath": "src/tools/NeonPingTool.ts",
+      "hash": "30b3b5a42f1587e0"
+    },
+    {
+      "relativePath": "src/tools/PrepareOrderTool.ts",
+      "hash": "6ac1f110a5be8550"
+    },
+    {
+      "relativePath": "src/tools/TeamReportTool.ts",
+      "hash": "ceb5ea35cb449c25"
+    },
+    {
+      "relativePath": "src/webhooks/DistributorCallback.ts",
+      "hash": "feb8b580e6af196e"
+    },
+    {
+      "relativePath": "src/webhooks/ReviewerRegistration.ts",
+      "hash": "fd080ca69776341b"
+    },
+    {
+      "relativePath": "test-local.js",
+      "hash": "c32b20b4cd64d7b3"
+    },
+    {
+      "relativePath": "tests/fixtures.ts",
+      "hash": "c92350b31b137aaf"
+    },
+    {
+      "relativePath": "tests/mediaFixtures.ts",
+      "hash": "d2a801c8cc9dabcd"
+    },
+    {
+      "relativePath": "tsconfig.json",
+      "hash": "da01a3a9c2199410"
+    }
+  ]
+}
